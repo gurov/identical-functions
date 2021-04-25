@@ -1,20 +1,12 @@
 # identical-functions
-```bash
-find node_modules -name '*.js' | xargs -n 1 nodejs index.js > info.csv
-```
 
+The repos for finding identical functions
 
-.separator ,
-.import info.csv info
+## How to start
 
-.schema info
+1. Set folder in the `run.sh`
+2. Call this one
 
-
-sqlite> create table foo(a, b);
-sqlite> .separator ,
-sqlite> .import test.csv foo
-
-
-SELECT COUNT(file), fn
-FROM info
-GROUP BY fn LIMIT 10;
+## Output
+* `info.csv`, format: id, path, hash
+* Extracted functions in in the `functions` folder with `<hash>.js` names
