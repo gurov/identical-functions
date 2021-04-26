@@ -1,6 +1,8 @@
 # identical-functions
 
-The repos for finding identical functions
+The repos for finding identical functions.
+
+Read the article: [en](https://habr.com/ru/post/554334/) or [ru](https://habr.com/ru/post/554314/)
 
 ## How to start
 
